@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import TitleComp from './title_comp';
 import Heading from './heading';
 import Desc from './desc';
-import {Social , Social_footer} from './social';
+import {Social } from './social';
 
 export default function home_1_myself() {
     var style={
