@@ -6,7 +6,7 @@ import svg from '../assets/images/svg/Group 3.svg';
 
 export default function home_1_banner() {
 
-    var style={"background-color":"var(--bg-primary)"}
+    var style={"backgroundColor":"var(--bg-primary)"}
     return (
 
              <section className=" position-relative banner-section overflow-hidden" style={style}>

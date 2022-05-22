@@ -1,4 +1,5 @@
 var gulp= require('gulp'); 
+const { watch, series } = require('gulp');
 // var concat = require('gulp-concat');
 // var uglify = require('gulp-uglify');
 // var csso = require('gulp-csso');
@@ -38,4 +39,8 @@ async function css(){
     .pipe(gulp.dest('./src/assets/css/vendor'))
 };
 
-exports.default=css;
+exports.default = function() {
+  // You can use a single task
+  watch('./src/assets/css/*.css',{ events: 'all' ,ignoreInitial: false, queue: false}, css);
+  // Or a composed task
+};
