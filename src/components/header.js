@@ -3,9 +3,10 @@ import Hamburger from './hamburger';
 import logo from '../assets/images/svg/logo.svg';
 import {  Container, Nav ,Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+
 function header() {
     return (
-               <Navbar bg="dark" expand="lg" fixed="top" className=""> 
+               <Navbar  expand="lg" fixed="top" className="header-blur" style={{'backdropFilter':"blur(10px)"}}> 
                     <Container >
                         <Navbar.Brand to="./index" className=""> <img src={logo} alt="logo" className="img-fluid logo_img"/> </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0">

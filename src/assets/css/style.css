@@ -80,7 +80,7 @@ main section{
        width: 70px;
     }
    .logo_img{
-       width: 130px;
+       width: 4em;
     }
     .pattern{
         width: 110px;
@@ -94,7 +94,7 @@ and (min-width : 768px) {
         width: 90px;
     }
     .logo_img{
-        width: 170px;
+        width: 8rem;
     }
     .pattern{
         width: unset;
