@@ -1,0 +1,46 @@
+.header-gradiant-color {
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+@media only screen 
+and (min-width : 992px) {
+
+
+    .nav-link{
+        display: inline-block;
+        overflow: hidden;
+        padding: 8px 32px;
+        position: relative;
+        align-self: center;
+    }
+    .nav-link>span::before , .nav-link>span::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: white ;
+        display: block;
+        /* border-radius: 5p    ; */
+        transition: all 0.4s ease-in-out;
+    }
+    .nav-link>span::before {
+        top: 0;
+        left: 0;
+    } .nav-link>span::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .nav-link:hover> span::before,.nav-link:hover> span::after{
+        width: 100%;
+    }
+
+    .nav-btn>span::before,.nav-btn>span::after{
+        content: none !important;
+    }
+
+}

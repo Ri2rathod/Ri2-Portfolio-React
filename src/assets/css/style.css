@@ -1,4 +1,5 @@
 @import url(./typography.css);
+@import url(./_header.css);
 
 .banner-section{
     padding-top  : 112px;
@@ -108,37 +109,5 @@ and (min-width : 1200px) {
 @media only screen 
 and (min-width : 992px) {
 
-
-    .nav-link{
-        display: inline-block;
-        overflow: hidden;
-        padding: 8px 32px;
-        position: relative;
-    }
-    .nav-link>span::before , .nav-link>span::after {
-        position: absolute;
-        content: "";
-        width: 0;
-        height: 2px;
-        background-color: var(--color-primary) ;
-        display: block;
-        /* border-radius: 5p    ; */
-        transition: all 0.4s ease-in-out;
-    }
-    .nav-link>span::before {
-        top: 0;
-        left: 0;
-    } .nav-link>span::after {
-        bottom: 0;
-        right: 0;
-    }
-
-    .nav-link:hover> span::before,.nav-link:hover> span::after{
-        width: 100%;
-    }
-
-    .nav-btn>span::before,.nav-btn>span::after{
-        content: none !important;
-    }
 
 }

@@ -11,6 +11,16 @@ $theme-colors: (
 );
 
 
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1600px
+) !default;
+
+
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
